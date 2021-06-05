@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/rentallist.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="css/index.css"/> -->
+	<title>我的房子</title>
+</head>
+<body>
+	<!------------------------------------ 頭部-------------------------------------------- -->
+	<header>
+		
+			<a href="index.html"><img src="image/index/logo.jpg"  class="logo"></a>
+		<div class="my">
+			<a href="myhouse.html"><img src="image/index/my.jpg" ></a>
+	        <a href="index.html"><img src="image/index/xiazai.jpg" ></a>
+		</div>
+	</header>
+	
+	<!------------------------------------------- 搜索框 -------------------------------------------->
+	<div class="search">
+		<div class="sr-min">
+			<input type="text"  />
+			<span id="gang">
+				
+			</span>
+			<img src="image/SecondHandList/search_03.png" >
+		</div>
+	</div>
+	<!------------------------------------------- 選擇器 ----------------------------------------------->
+	<div class="selector">
+		<ul class="list1">
+			<li class="area-max">區域<span class="sanjiao"></span></li>
+			<li class="price-max">月租<span class="sanjiao"></span></li>
+			<li class="room-max">房型<span class="sanjiao"></span></li>
+			<li class="more-max">更多<span class="sanjiao"></span></li>
+		</ul>
+		<ul class="list2" style="display: none;">
+			<li class="area" style="display: none;">
+				<ul class="area-big">
+					<li class="area-li">
+						<ul class="area-small">
+						    <li>區域</li>
+							<li>地鐵</li>
+					    </ul>
+					</li>
+					<li class="area-li">
+						<ul class="area-small">
+						    <li>附近</li>
+							<li>不限</li>
+							<li>朝陽</li>
+							<li>海淀</li>
+							<li>昌平</li>
+							<li>豐臺</li>
+							<li>石景山</li>
+						</ul>
+					</li>
+					<li class="area-li">
+						<ul class="area-small">
+						    <li>不限</li>
+							<li>安貞</li>
+							<li>奧林匹克公園</li>
+							<li>百子灣</li>
+							<li>北工大</li>
+							<li>北苑</li>
+							<li>CBD</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="price" style="display: none;">
+				<ul class="price-all">
+					<li>不限</li>
+					<li>100万以下</li>
+					<li>100万-150万</li>
+					<li>150万-200万</li>
+					<li>200万-250万</li>
+					<li>250万-300万</li>
+					<li>自定义价格</li>
+				</ul>
+			</li>
+			<li class="room" style="display: none;">
+				<ul>
+					<li><span>不限</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+					<li><span>1室</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+					<li><span>2室</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+					<li><span>3室</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+					<li><span>4室</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+					<li><span>5室</span><span class="duigou"><img src="image/SecondHandList/ok.png" ></span></li>
+				</ul>
+				<div class="true">
+					<a href="carefreeRoom.html">確認</a>
+				</div>
+			</li>
+			<li class="more" style="display: none;">
+				<ul class="more-ul">
+					<li class="more1 more-o">
+						<p>區域</p>
+						<ul class="more-i">
+							<li>東</li>
+							<li>西</li>
+							<li>南</li>
+							<li>北</li>
+							<li>東南</li>
+							<li>西北</li>
+						</ul>
+					</li>
+					<li class="more2 more-o">
+						<p>面積（平方/米）</p>
+						<ul class="more-i">
+							<li>50以下</li>
+							<li>50-70</li>
+							<li>70-90</li>
+							<li>90-110</li>
+							<li>110-130</li>
+							<li>130-150</li>
+							<li>150-200</li>
+							<li>200以上</li>
+						</ul>
+					</li>
+					<li class="more3 more-o">
+						<p>標簽</p>
+						<ul class="more-i">
+							<li>學區房</li>
+							<li>地鐵房</li>
+							<li>不限購</li>
+							<li>滿兩年</li>
+							<li>滿五年</li>
+							<li>降價</li>
+							<li>上新</li>
+							<li>有鈅匙</li>
+							<li>獨家</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	
+	
+	<!------------------------------------------ 房源信息 ------------------------------------------------>
+	<div class="house">
+		<ul>
+			<li>
+				<img src="image/SecondHandList/img1.png" class="hs-left">
+				<div class="hs-right">
+					<p>西便门外大街2室1厅89平</p>
+					<p><span>2室1厅96㎡南北</span><span><b style="color: red;">1100万</b></span></p>
+					<p><span>紅廟北里</span><span> 14268元/平</span></p>
+					<p><span>集中供暖</span></p>
+				</div>
+			</li>
+			<li>
+				<img src="image/SecondHandList/img2.png" class="hs-left">
+				<div class="hs-right">
+					<p>金桥国际 1室1厅 63平</p>
+					<p><span>2室1厅96㎡南北</span><span> <b style="color: red;">205万</b></span></p>
+					<p><span>光大水墨 </span><span> 12268元/平</span></p>
+					<p><span>集中供暖</span></p>
+				</div>
+			</li>
+			<li>
+				<img src="image/SecondHandList/img3.png" class="hs-left">
+				<div class="hs-right">
+					<p>花涧溪二期 2室2厅 90平</p>
+					<p><span>2室1厅96㎡南北</span><span> <b style="color: red;">110万</b></span></p>
+					<p><span>北京新天地</span><span> 25568元/平</span></p>
+					<p><span>集中供暖</span></p>
+				</div>
+			</li>
+			<li>
+				<img src="image/SecondHandList/img4.png" class="hs-left">
+				<div class="hs-right">
+					<p>南北通透 兩居精裝</p>
+					<p><span>2室1厅96㎡南北</span><span> <b style="color: red;">300万</b></span></p>
+					<p><span>鲁谷二手房</span><span> 14268元/平</span></p>
+					<p><span>集中供暖</span></p>
+				</div>
+			</li>
+		</ul>
+	</div>
+<!------------------------------------------------- footer ------------------------------------>
+	<footer>
+		<div class="ft-top">
+			北京找房無憂 > 首頁
+		</div>
+		<div class="model">
+			<div class="md-min">
+				<img src="image/index/apple.png" class="min-left">
+				<div class="min-right">
+					<p>iPhone</p>
+					<p>客戶端</p>
+				</div>
+			</div>
+			<div class="md-min">
+				<img src="image/index/android.png" class="min-left">
+				<div class="min-right">
+					<p>Android</p>
+					<p>客戶端</p>
+				</div>
+			</div>
+		</div>
+		<div class="ft-bottom">
+			<p>北京找房无忧房地产经纪公司</p>
+			<p>网络经营许可证京ICP备20160812号</p>
+		</div>
+	</footer>
+</body>
+<script>
+	    function setRem() {
+	        var ui_w = 375;
+	        // 获取屏幕的宽度
+	        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	        console.log(ui_w,clientWidth);
+	
+	        // 通过js动态改变html根节点字体大小
+	        var html_ = document.getElementsByTagName('html')[0];
+	        html_.style.fontSize = (clientWidth/ui_w)*100 +'px';
+	    }
+	    // window.onresize 浏览器被重置大小执行事件
+	    window.onresize = setRem;
+	
+	
+	</script>
+</html>
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script>
+	$(".area-max").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red").parent(".list1").siblings(".list2").css("display","block").children(".area").css("display","block").siblings().css("display","none");
+	})
+	$(".price-max").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red").parent(".list1").siblings(".list2").css("display","block").children(".price").css("display","block").siblings().css("display","none");
+	})
+	$(".room-max").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red").parent(".list1").siblings(".list2").css("display","block").children(".room").css("display","block").siblings().css("display","none");
+	})
+	$(".more-max").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red").parent(".list1").siblings(".list2").css("display","block").children(".more").css("display","block").siblings().css("display","none");
+	})
+	$(".house").tap(function(){
+		$(".list2").css("display","none");
+		$(".list1").children("li").removeClass("color-red")
+	})
+	$(".search").tap(function(){
+		$(".list2").css("display","none");
+		$(".list1").children("li").removeClass("color-red")
+	})
+	$(".duigou").tap(function(){
+		$(this).children("img").css("display","block");
+	})
+	$(".area-small").children("li").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red")
+	})
+	$(".price-all").children("li").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red")
+	})
+	$(".more-i").children("li").tap(function(){
+		$(this).addClass("color-red").siblings().removeClass("color-red")
+	})
+</script>

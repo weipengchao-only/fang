@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/myhouse.css"/>
+	
+	<title>我的</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul{
+			list-style: none;
+		}
+		html{
+			font-size: 100px;
+		}
+		body{
+			background-color: #F5F5F5;
+		}
+		.my-top{
+			width: 100%;
+			height: 2.5rem;
+			background: url(image/my/bg2.png) no-repeat 0 0;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: relative;
+		}
+		.back{
+			width: 1rem;
+			height: .5rem;
+			position: absolute;
+			right: .15rem;
+			top: .15rem;
+			display: flex;
+			justify-content: space-around;
+		}
+		.back span{
+			display: inline-block;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			font-size: .18rem;
+			color: white;
+		}
+		.back span img{
+			width: .2rem;
+			height: .2rem;
+		}
+		.profile{
+			width: 2.5rem;
+			height: 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			font-size: .18rem;
+			color: #FFFFFF;
+			margin-bottom: .2rem;
+		}
+		.profile img{
+			width: .8rem;
+			height: .8rem;
+		}
+		.profile p{
+			width: 100%;
+			height: .4rem;
+			text-align: center;
+			line-height: .4rem;
+		}
+		.choice{
+			width: 100%;
+			height: 1.8rem;
+			background-color: #FFFFFF;
+		}
+		ul{
+			width: 100%;
+			height: 100%;
+			font-size: .16rem;
+			color: #2F3130;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		li{
+			width: 90%;
+			height: 33.3%;
+			line-height: .6rem;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			border-top: 1px solid #DCDCDC;
+		}
+		.co-left{
+			width: 45%;
+			height: .6rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.co-right{
+			display: flex;
+			align-items: center;
+		}
+		.co-right img{
+			width: .1rem;
+			height: .15rem;
+		}
+		.return{
+			width: 90%;
+			height: .6rem;
+			font-size: .18rem;
+			margin: 0 auto;
+			text-align: center;
+			line-height: .6rem;
+			background-color: #FFFFFF;
+			margin-top: .2rem;
+		}
+		.return a{
+			text-decoration: none;
+			color: #FF8A00;
+		}
+	</style>
+</head>
+<body>
+	<!------------------------------------ 頭部-------------------------------------------- -->
+	<header>
+		
+			<a href="index.html"><img src="image/index/logo.jpg"  class="logo"></a>
+		<div class="my">
+			<a href="mylogin.html"><img src="image/index/my.jpg" ></a>
+	        <a href="index.html"><img src="image/index/xiazai.jpg" ></a>
+		</div>
+	</header>
+	<section>
+		<a href="index.html">首頁</a><span>></span>
+		<a href="mylogin.html">我的</a>
+	</section>
+	<div class="my-top">
+		<div class="profile">
+			<img src="image/my/urse2.png" >
+			<p>歡迎您,13937338065</p>
+		</div>
+		
+	</div>
+	<a href="myhouse.html" style="color: #000000;">
+		<div class="choice">
+			<ul>
+				<li>
+					<div class="co-left">
+						
+						<span>我關注的房源</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+				<li>
+					<div class="co-left">
+						
+						<span>我關注的小區</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+				<li>
+					<div class="co-left">
+						
+						<span>我的看房記錄</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+			</ul>
+		</div>
+	</a>
+	
+	<div class="return">
+		<a href="login.html">退出登錄</a>
+	</div>
+
+</body>
+<script>
+	    function setRem() {
+	        var ui_w = 375;
+	        // 获取屏幕的宽度
+	        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	        console.log(ui_w,clientWidth);
+	
+	        // 通过js动态改变html根节点字体大小
+	        var html_ = document.getElementsByTagName('html')[0];
+	        html_.style.fontSize = (clientWidth/ui_w)*100 +'px';
+	    }
+	    // window.onresize 浏览器被重置大小执行事件
+	    window.onresize = setRem;
+	
+	
+	</script>
+</html>
+

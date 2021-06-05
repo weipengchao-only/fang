@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>我的</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		ul{
+			list-style: none;
+		}
+		html{
+			font-size: 100px;
+		}
+		.my-top{
+			width: 100%;
+			height: 3rem;
+			background: url(./image/my/bg1.png) no-repeat 0 0;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: relative;
+		}
+		.back{
+			width: 1rem;
+			height: .5rem;
+			position: absolute;
+			right: .15rem;
+			top: .15rem;
+			display: flex;
+			justify-content: space-around;
+		}
+		.back span{
+			display: inline-block;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			font-size: .18rem;
+			color: white;
+		}
+		.back span img{
+			width: .2rem;
+			height: .2rem;
+		}
+		.profile{
+			width: 1rem;
+			height: 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			font-size: .18rem;
+			color: #FFFFFF;
+			margin-bottom: .2rem;
+		}
+		.profile img{
+			width: .8rem;
+			height: .8rem;
+		}
+		.profile p{
+			width: 100%;
+			height: .4rem;
+			text-align: center;
+			line-height: .4rem;
+			border: 1px solid #FFFFFF;
+		}
+		.choice{
+			width: 100%;
+			height: 2.6rem;
+			margin-top: .1rem;
+			background-color: #FFFFFF;
+		}
+		ul{
+			width: 100%;
+			height: 100%;
+			font-size: .16rem;
+			color: #2F3130;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		li{
+			width: 90%;
+			height: .6rem;
+			line-height: .6rem;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			border-top: 1px solid #A9A9A9;
+		}
+		.co-left{
+			width: 45%;
+			height: .6rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.co-right{
+			display: flex;
+			align-items: center;
+		}
+		.co-right img{
+			width: .1rem;
+			height: .15rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="my-top">
+		<div class="profile">
+			<img src="image/my/urse2.png" >
+			<p><a href="login.html" style="color: white;">登錄</a></p>
+		</div>
+		<div class="back">
+			<span>
+				<img src="image/my/urse.png" >
+				<a href="my.html" style="color: white;"><p>我的</p></a>
+			</span>
+			<span>
+				<img src="image/my/down.png" >
+				<p>下載</p>
+			</span>
+		</div>
+	</div>
+	<div class="choice">
+		<a href="#" style="color: #000000;">
+			<ul>
+				<li>
+					<div class="co-left">
+						<img src="image/my/icon1.png" >
+						<span>我關注的房源</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+				<li>
+					<div class="co-left">
+						<img src="image/my/icon2.png" >
+						<span>我關注的小區</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+				<li>
+					<div class="co-left">
+						<img src="image/my/icon3.png" >
+						<span>我關注的新房</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+				<li>
+					<div class="co-left">
+						<img src="image/my/icon4.png" >
+						<span>我的看房記錄</span>
+					</div>
+					<div class="co-right">
+						<img src="image/my/right.png" >
+					</div>
+				</li>
+			</ul>
+		</a>
+		
+	</div>
+
+</body>
+<script>
+	    function setRem() {
+	        var ui_w = 375;
+	        // 获取屏幕的宽度
+	        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+	        console.log(ui_w,clientWidth);
+	
+	        // 通过js动态改变html根节点字体大小
+	        var html_ = document.getElementsByTagName('html')[0];
+	        html_.style.fontSize = (clientWidth/ui_w)*100 +'px';
+	    }
+	    // window.onresize 浏览器被重置大小执行事件
+	    window.onresize = setRem;
+	
+	
+	</script>
+</html>
